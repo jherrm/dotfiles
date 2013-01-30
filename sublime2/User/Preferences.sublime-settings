@@ -1,4 +1,55 @@
 {
-	"font_size": 12.0,
-	"theme": "Soda Dark.sublime-theme"
+  "font_size": 10.0,
+  "theme": "Soda Dark.sublime-theme",
+  "color_scheme": "Packages/Base16/base16-railscasts.dark.tmTheme",
+  "draw_minimap_border": true,
+  "draw_white_space": "all",
+  "ensure_newline_at_eof_on_save": true,
+  "highlight_line": true,
+  "close_windows_when_empty": true,
+  "tab_size": 2,
+  "translate_tabs_to_spaces": true,
+  "use_simple_full_screen": true,
+  // "scroll_past_end": true,
+
+  "file_exclude_patterns": [
+      // defaults:
+      "*.pyc",
+      "*.pyo",
+      "*.exe",
+      "*.dll",
+      "*.obj",
+      "*.o",
+      "*.a",
+      "*.lib",
+      "*.so",
+      "*.dylib",
+      "*.ncb",
+      "*.sdf",
+      "*.suo",
+      "*.pdb",
+      "*.idb",
+      ".DS_Store",
+      "*.class",
+      "*.psd",
+      "*.db",
+      // custom:
+      "*.mo",
+      "*.po",
+      "*.woff",
+      "*.gz",
+      "*.sqlite3",
+      "*.Python",
+      "*.sublime-project",
+      "*.sublime-workspace",
+      "*.orig"
+    ],
+
+    "ignored_packages":
+    [
+      "Vintage",
+      "Three.js Autocomplete",
+      "SublimeCodeIntel"
+    ]
+
 }
