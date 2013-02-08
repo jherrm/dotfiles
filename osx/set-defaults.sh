@@ -98,6 +98,12 @@ systemsetup -setcomputersleep Off > /dev/null
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
 
+# Disable safe sleep to save hard drive space
+# To re-enable, execute: sudo pmset -a hibernatemode 3
+# To see what the current value is, execute: pmset -g | grep hibernatemode 
+sudo rm /private/var/vm/sleepimage
+sudo pmset -a hibernatemode 0
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
