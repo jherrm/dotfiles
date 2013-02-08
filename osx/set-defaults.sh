@@ -29,6 +29,9 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 # Menu bar: show remaining battery time (on pre-10.8); hide percentage
 defaults write com.apple.menuextra.battery ShowPercent -string "NO"
 defaults write com.apple.menuextra.battery ShowTime -string "YES"
+# For 10.8 and above, try a third party solution like:
+# https://github.com/codler/Battery-Time-Remaining/downloads
+# https://github.com/AriX/Battery-Time-Remaining/downloads
 
 # Menu bar: hide the useless Time Machine and Volume icons
 # defaults write com.apple.systemuiserver menuExtras -array "/System/Library/CoreServices/Menu Extras/Bluetooth.menu" "/System/Library/CoreServices/Menu Extras/AirPort.menu" "/System/Library/CoreServices/Menu Extras/Battery.menu" "/System/Library/CoreServices/Menu Extras/Clock.menu"
