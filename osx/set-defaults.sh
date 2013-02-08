@@ -46,8 +46,8 @@ defaults write -g AppleShowScrollBars -string "Always"
 # Disable opening and closing window animations
 # defaults write -g NSAutomaticWindowAnimationsEnabled -bool false
 
-# Increase window resize speed for Cocoa applications
-defaults write -g NSWindowResizeTime -float 0.001
+# Increase window resize speed for Cocoa applications (0.2 default)
+defaults write -g NSWindowResizeTime -float 0.05
 
 # Expand save panel by default
 defaults write -g NSNavPanelExpandedStateForSaveMode -bool true
