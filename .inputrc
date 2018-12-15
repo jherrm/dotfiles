@@ -1,8 +1,17 @@
+# Carry over site-wide readline configuration to the user configuration. Usually /etc/inputrc includes some goodies.
+$include /etc/inputrc
+
+# Set readline to display possible completions using different colors to indicate their file types.
+set colored-stats on
+
 # Make Tab autocomplete regardless of filename case
 set completion-ignore-case on
 
 # List all matches in case multiple possible completions are possible
 set show-all-if-ambiguous on
+
+# List all matches in case multiple possible completions are possible but no partial completion can be made.
+set show-all-if-unmodified on
 
 # Immediately add a trailing slash when autocompleting symlinks to directories
 set mark-symlinked-directories on
@@ -38,3 +47,8 @@ set convert-meta off
 
 # Use Alt/Meta + Delete to delete the preceding word
 "\e[3;3~": kill-word
+
+# Sets max chars for common prefix to display for completions. If the common prefix has more than 3 characters, they are replaced by ellipsis.
+# Useful for directories with many files sharing a long common prefix, such a camera image directory.
+# Prints ...0.png ...1.png instead of Screenshot_20170730.png Screenshot_20170731.png.
+set completion-prefix-display-length 3
